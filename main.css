@@ -1,0 +1,164 @@
+.dropmenu {
+    background-color: #ffffff;
+    color: black;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+    margin-left: 94px;
+}
+
+.header {
+    position: relative;
+    display: inline-block;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.sub-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.sub-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.header:hover .sub-menu {
+    display: block;
+}
+
+.header:hover .dropmenu {
+    background-color: #fafffa;
+}
+
+.part1 {
+    display: flex;
+    margin: 15px 100px 10px 100px;
+    /* justify-content: space-between; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.part1-content1 {
+    z-index: 1;
+    margin-right: 30px;
+}
+
+.part1-content1 h4,
+h3,
+h2,
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.part1-content1 h3 {
+    color: #dfdddd;
+}
+
+.part1-content1 h2 {
+    color: #797676;
+}
+
+.part1-content1 h4 {
+    color: #979797;
+}
+
+.part1-content2 {
+    z-index: 2;
+    margin: 15px 0px 10px 0;
+    padding-right: 60px;
+    flex-direction: row;
+    object-fit: fill;
+}
+
+.part2-content2 span,
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #797676;
+}
+
+.text1 {
+    margin-bottom: 60px;
+    color: #797676;
+}
+
+.img-house2 {
+    margin-top: 106px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.img-house1 {
+    width: 100%;
+}
+
+.part2 {
+    display: flex;
+    margin: 20px 100px 20px 100px;
+}
+
+.colum2,
+.colum3 {
+    width: 53%;
+    align-items: center;
+    text-align: center;
+}
+
+.colum1 {
+    width: 53%;
+    background-color: black;
+    color: white;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.sp {
+    padding-bottom: 20px;
+}
+
+.colum2 {
+    background-color: #777777;
+    color: rgb(252, 249, 249);
+}
+
+.colum3 {
+    background-color: #979797;
+    color: #fafffa;
+}
+
+.contact {
+    text-decoration: none;
+}
+
+.link {
+    list-style: none;
+    margin-left: -30px;
+}
+
+.link:hover,
+.contact-icon:hover {
+    cursor: pointer;
+    color: #afadad;
+}
+
+.contact-icon {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .part1 {
+        flex-direction: column;
+    }
+}
